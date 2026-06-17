@@ -18,7 +18,11 @@ function Letter() {
                         deleteSpeed: 50
                     }}/>
             </div>
-            <img className="floating-img" src="/img/letter.png" alt="letter"/>
+            <img
+                 className="floating-img"
+                 src={`${import.meta.env.BASE_URL}img/letter.png`}
+                 alt="letter"
+             />
             <div>
                 <button className="btn" onClick={() => navigate("/")}>
                     Go Back
